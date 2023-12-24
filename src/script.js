@@ -58,3 +58,16 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Paris");
+
+let forecast = document.querySelector("#forecast");
+
+forecast.innerHTML = `
+  <div class="weather-forecast-day">
+    <div class="weather-forecast-date">Fri</div>
+    <div class="weather-forecast-icon">⛅️</div>
+    <div class="weather-forecast-temperatures">
+      <div class="weather-forecast-temperature-max">18º</div>
+      <div class="weather-forecast-temperature-min">12º</div>
+    </div>
+  </div>
+`;
